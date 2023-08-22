@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@android:color/white">
+
+<View
+    android:id="@+id/topColoredBox"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:layout_alignParentTop="true"
+    android:background="@color/burntOrange" />
+
+    <TextView
+        android:id="@+id/tableNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topColoredBox"
+        android:layout_marginTop="-68dp"
+        android:layout_centerHorizontal="true"
+        android:text="Table 1"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginStart="8dp"/>
+
+</LinearLayout>
+
+<View
+    android:id="@+id/bottomColoredBox"
+    android:layout_width="match_parent"
+    android:layout_height="78dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/burntOrange" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

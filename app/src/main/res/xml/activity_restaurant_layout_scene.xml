@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="105dp"
+            android:layout_marginTop="96dp"
+            android:layout_width="99dp"
+            motion:layout_constraintTop_toBottomOf="@id/coloredBox1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:id="@+id/table1Button" />
+        <Constraint
+            motion:layout_editor_absoluteY="186dp"
+            android:layout_height="103dp"
+            motion:layout_editor_absoluteX="271dp"
+            android:layout_width="95dp"
+            android:id="@+id/table2Button" />
+        <Constraint
+            android:layout_height="56dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="430dp"
+            motion:layout_constraintTop_toBottomOf="@id/coloredBox1"
+            android:id="@+id/barButton" />
+        <Constraint
+            motion:layout_editor_absoluteY="480dp"
+            android:layout_height="100dp"
+            motion:layout_editor_absoluteX="43dp"
+            android:layout_width="100dp"
+            android:id="@+id/table5Button" />
+        <Constraint
+            motion:layout_editor_absoluteY="480dp"
+            android:layout_height="100dp"
+            motion:layout_editor_absoluteX="278dp"
+            android:layout_width="100dp"
+            android:id="@+id/table4Button" />
+        <Constraint
+            motion:layout_editor_absoluteY="330dp"
+            android:layout_height="100dp"
+            motion:layout_editor_absoluteX="159dp"
+            android:layout_width="100dp"
+            android:id="@+id/table3Button" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+    </ConstraintSet>
+</MotionScene>
