@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.List;  // Import for List
+
 public class OrderDialogFragment extends DialogFragment {
 
     private RecyclerView recyclerView;
@@ -25,10 +27,9 @@ public class OrderDialogFragment extends DialogFragment {
         recyclerView = view.findViewById(R.id.itemRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
 
-        // Create a list of items (replace this with your actual data)
         List<MenuItem> itemList = createItemList();
 
-        itemAdapter = new ItemAdapter(itemList); // Initialize the adapter with the list
+        itemAdapter = new ItemAdapter(requireContext(), itemList);
         recyclerView.setAdapter(itemAdapter);
 
         builder.setView(view);
@@ -36,8 +37,15 @@ public class OrderDialogFragment extends DialogFragment {
         return builder.create();
     }
 
-    // Method to create a sample list of items (replace this with your actual data)
+    // Method to create a list of items (replace this with your actual data)
     private List<MenuItem> createItemList() {
         // Create and return a list of items
+        // For example:
+        List<MenuItem> itemList = new ArrayList<>();
+        itemList.add(new MenuItem("Item 1", 10.0));
+        itemList.add(new MenuItem("Item 2", 15.0));
+        // ... add more items
+        return itemList;
     }
 }
+

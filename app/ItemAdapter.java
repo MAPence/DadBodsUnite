@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
-    private List<MenuItem> itemList; // Replace MenuItem with your actual item model class
+    private List<MenuItem> itemList; // Replace MenuItem with actual item model class
 
     public ItemAdapter(List<MenuItem> itemList) {
         this.itemList = itemList;
@@ -29,7 +29,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         MenuItem item = itemList.get(position);
 
         holder.nameTextView.setText(item.getName());
-        holder.priceTextView.setText(item.getPrice()); // Set the price to the TextView
+        holder.priceTextView.setText(item.getPrice());
     }
 
     @Override
@@ -44,7 +44,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         ViewHolder(View itemView) {
             super(itemView);
             nameTextView = itemView.findViewById(R.id.nameTextView);
-            priceTextView = itemView.findViewById(R.id.priceTextView); // TextView for price
+            priceTextView = itemView.findViewById(R.id.priceTextView);
         }
     }
 }
