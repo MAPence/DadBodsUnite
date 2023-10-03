@@ -24,14 +24,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        webView = findViewById(R.id.logoImageView)
-        webView.settings.javaScriptEnabled = true
-        webView.loadUrl("https://www.shutterstock.com/shutterstock/photos/2263356737/display_1500/stock-vector-happy-man-holding-beer-cartoon-vector-illustration-2263356737.jpg")
-        webView.webViewClient = WebViewClient()
-
         val usernameEditText = findViewById<EditText>(R.id.usernameEditText)
         val passwordEditText = findViewById<EditText>(R.id.passwordEditText)
-        loginButton = findViewById<Button>(R.id.loginButton)
+        loginButton = findViewById(R.id.loginButton)
 
         loginButton.setOnClickListener {
             val username = usernameEditText.text.toString()
@@ -39,10 +34,7 @@ class MainActivity : ComponentActivity() {
             if (isLoginValid(username, password)) {
 
             val inflater = LayoutInflater.from(this)
-            val restaurantLayout = inflater.inflate(R.layout.activity_restaurant_layout, null)
 
-
-            setContentView(restaurantLayout)
         } else {
             Toast.makeText(this, "Invalid login credentials", Toast.LENGTH_SHORT).show()
         }
