@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "861366095840",
+    "project_id": "dadbodsunite-mope",
+    "storage_bucket": "dadbodsunite-mope.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861366095840:android:d64fd31ded95cc4b56a585",
+        "android_client_info": {
+          "package_name": "com.example.dadbodsunite"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiiz6fEHG3UkxwJH7SdRbk7ObjaUMlpZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
